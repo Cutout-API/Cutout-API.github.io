@@ -1,0 +1,4 @@
+<map id="Cutout::MeshCreator::SVGMesh" name="Cutout::MeshCreator::SVGMesh">
+<area shape="rect" id="node2" href="$classCutout_1_1MeshCreator_1_1Mesh.html" title="Abstract class that represents a mesh object. " alt="" coords="5,109,149,151"/>
+<area shape="rect" id="node3" href="$classCutout_1_1MeshCreator_1_1MeshStyle.html" title="Represents the style of a mesh. " alt="" coords="5,5,149,47"/>
+</map>
