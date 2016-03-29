@@ -2,7 +2,25 @@
 layout: default
 title: Examples
 menuname: Examples
-message: We do not currently have any examples to display. Hopefully we will be updating this soon.
 ---
+<section class="main-content">
 
-{% include coming-soon.html %}
+  <h3>
+    <a id="the-ucrocketry-logo" class="anchor" href="#the-ucrocketry-logo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Astro Cats Logo
+  </h3>
+  <p>The University of Cincinnati Astro Cats logo was designed by Jacob Chesley for his teams <a href="http://www.ucrocketry.com">senior design project</a>. Below is the actual svg (right) and cutout's interpretation of that svg (left). Everything is displayed correctly with two exceptions: its upside down and the eye is missing. Everything is upside down because of the way our rendering library is interpretting the points. The eye is missing because it uses a feature of the SVG format that we have not implemented yet (Transformations).</p>
+  <div align="middle">
+    <img align="left" width="256" src="{{ "/assets/astrocats.svg" | prepend: site.github.url }}" />
+    <img align="middle" width="256" src="{{ "/assets/ucrocketrylogo.PNG" | prepend: site.github.url }}" />
+  </div>
+
+  <h3>
+    <a id="the-cutout-plusicon" class="anchor" href="#the-cutout-plusicon" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Cutout Plus Icon
+  </h3>
+  <p>Clay designed the plus icon for use in our teams <a href="{{ site.github.url | append: "/assets/Poster.svg" }}">senior design poster</a>. Below is the actual svg (right) and cutout's interpretation of that svg (left). The only real difference in Cutouts interpretation is the coloring. The plus is supposed to be tranparent so thats why it has different colors depending on what its displayed against. The Circle's color can be changed at will and so the poster and cutout were set to use the same blue.</p>
+  <div align="middle">
+    <img align="left" width="256" src="{{ "/assets/ic_add_circle_black_48px.svg" | prepend: site.github.url }}" />
+    <img align="middle" width="256" src="{{ "/assets/plusicon.png" | prepend: site.github.url }}" />
+  </div>
+
+</section>
