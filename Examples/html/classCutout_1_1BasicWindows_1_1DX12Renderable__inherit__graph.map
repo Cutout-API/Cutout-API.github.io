@@ -1,7 +1,0 @@
-<map id="Cutout::BasicWindows::DX12Renderable" name="Cutout::BasicWindows::DX12Renderable">
-<area shape="rect" id="node2" href="$classCutout_1_1Applications_1_1ClearScreen.html" title="Cutout::Applications\l::ClearScreen" alt="" coords="209,5,349,47"/>
-<area shape="rect" id="node3" href="$classCutout_1_1Applications_1_1RenderObjFile.html" title="Cutout::Applications\l::RenderObjFile" alt="" coords="209,71,349,112"/>
-<area shape="rect" id="node4" href="$classCutout_1_1Applications_1_1SimplePolygon.html" title="Cutout::Applications\l::SimplePolygon" alt="" coords="209,136,349,177"/>
-<area shape="rect" id="node5" href="$classCutout_1_1Applications_1_1SimpleTriangle.html" title="Cutout::Applications\l::SimpleTriangle" alt="" coords="209,201,349,243"/>
-<area shape="rect" id="node6" href="$classCutout_1_1Applications_1_1SVGViewer.html" title="Cutout::Applications\l::SVGViewer" alt="" coords="209,267,349,308"/>
-</map>
