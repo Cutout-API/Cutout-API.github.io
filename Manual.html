@@ -1,0 +1,51 @@
+---
+layout: default
+title: User Manual
+menuname: Manual
+---
+
+<section class="main-content">
+
+  <h3>
+    <a id="this-manual" class="anchor" href="#this-manual" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The User Manual
+  </h3>
+  <p>This is a guide that explains how the API can be used by developers once the API is released. This document will be changing in the future as we prepare to release the Cutout API. At the moment we assume the use of Visual Studios, but the steps can be generalized to most other IDE's.</p>
+  <p>Currently this manual is just meant as a conceptualization of how things will work for interested parties. As we get closer to release we will update this to include detailed guides.</p>
+
+  <h3>
+    <a id="usage-details" class="anchor" href="#usage-details" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To Use The API
+  </h3>
+  <p>
+    Their will be 3 primary ways of using the API:
+    <ul>
+      <li>Statically linking to the entire Cutout Library</li>
+      <li>As a standalone entity (basically a dll)</li>
+      <li>Linking to individual libraries within Cutout</li>
+    </ul>
+  </p>
+
+  <h3>
+    <a id="static-linking" class="anchor" href="#static-linking" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To Statically Link To Cutout
+  </h3>
+  <p>Linking to the Cutout library is fairly straight foward. The first step is to download the code available <a href="{{ '/download' | prepend: site.github.url }}">here</a>.</p>
+  <p>Next you will want to add the folder containing Cutout to your VS solution as a seperate project. This will hopefully automatically set up build information. Otherwise you will need to set up the Cutout projects to build as static libraries. Once Cutout is building and outputing the library files you need to tell your other projects to use the Cutout library file during linking. This can be done through the settings menu of your project.</p>
+  <p>Now to use Cutout you just need to include the headers containing the functionality you wish to use and implement your code using the Cutout API.</p>
+  <p>Documentation of all the classes and functions that are available through the Cutout API can be found <a href="{{ "/cutout_documentation" | prepend: site.github.url }}">here</a>.</p>
+
+  <h3>
+    <a id="standalone-entity" class="anchor" href="#standalone-entity" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To Dynamically Link To Cutout
+  </h3>
+  <p>We will not be providing DLL's for Cutout at release. What we plan on providing is code that you can easily compile to form your own DLL that you can then use in your projects.</p>
+  <p>The first step is to download the code available <a href="{{ '/download' | prepend: site.github.url }}">here</a>.</p>
+  <p>Once downloaded the code comes with a VS solution that you can open up. Once open if you click build VS will generate the dynamic libraries for you.</p>
+  <p>These DLL's will work like any other. You can attach to them at link or runtime and access the libraries using standard methods for dynamic libraries.</p>
+  <p>In the future we will also provide functionality for shared libraries in linux.</p>
+
+  <h3>
+    <a id="sub-libraries" class="anchor" href="#sub-libraries" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How To Link To Individual Libraries Of Cutout
+  </h3>
+  <p>The Cutout API actually contains 3 seperate libraries as can be seen <a href="{{ "/design.html" | prepend: site.github.url }}">here</a>.</p>
+  <p>Depending on how you wish to use the library you might want to just use one or two of the modules and not the others. Like lets say you want to use the Mesh Generation portion and create your own parser and renderer. We designed Cutout to allow for this type of plug and play scenerio.</p>
+  <p>To link to an individual modules of Cutout you just need its code and then integrate it into your project using one of the other two methods. It'll work the same and only have the features on the module's you chose to integrate with.</p>
+
+</section>

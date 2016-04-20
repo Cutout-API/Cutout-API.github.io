@@ -4,7 +4,7 @@
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: #FFF;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -39,6 +39,7 @@
       .site-nav .page-link {
         display: block;
         padding: 5px 10px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        color: #111; }
         .site-nav .page-link:not(:last-child) {
           margin-right: 0; } }
